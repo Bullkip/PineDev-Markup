@@ -59,16 +59,7 @@ module.exports = {
         loader: 'babel-loader',
         exclude: '/node_modules/'
       },
-      {
-        // Vue
-        test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          loader: {
-            scss: 'vue-style-loader!css-loader!sass-loader'
-          }
-        }
-      },
+      
       {
         // Fonts
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
@@ -133,12 +124,11 @@ module.exports = {
     alias: {
       '~': PATHS.src, // Example: import Dog from "~/assets/img/dog.jpg"
       '@': `${PATHS.src}/js`, // Example: import Sort from "@/utils/sort.js"
-      vue$: 'vue/dist/vue.js'
+    
     }
   },
   plugins: [
-    // Vue loader
-    new VueLoaderPlugin(),
+    
     new MiniCssExtractPlugin({
       filename: `${PATHS.assets}css/[name].[contenthash].css`
     }),

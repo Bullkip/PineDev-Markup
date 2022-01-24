@@ -4,35 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Template</title>
+    <title>PineDev Markup Task</title>
   </head>
   <body>
-      <header>
-        <div class="wrapper">
-           <div class="header__top">
-            <nav class="header__navigation"></nav>
-            <div class="header__account"></div>
-          </div>
-          <div class="header__body">
-            <img src="" alt="" class="header__logo">
-            <div class="header__body-nav">
-              <div class="header__body-menu"></div>
-              <div class="header__body-btn"></div>
-            </div>
-            <div class="header__body-nav--mobile burger-menu">
-              <div class="header__body-menu"></div>
-              <div class="header__body-btn"></div>
-            </div>
+    <header>
+      <div class="wrapper">
+        <div class="header__top">
+          <nav class="header__navigation">
+            <div class="header__navigation-item"></div>
+            <div class="header__navigation-item"></div>
+            <div class="header__navigation-item"></div>
+          </nav>
+          <div class="header__account">
+            <div class="header__account-item"></div>
+            <div class="header__account-item"></div>
           </div>
         </div>
-      </header>
-      <main>
-        <div class="wrapper"></div>
-      </main>
-      <footer>
-        <div class="wrapper">
-         
+        <div class="header__body">
+          <img src="./assets/img/main-logo.svg" alt="" class="header__logo" />
+          <div class="burger__icon">
+            <div></div>
+            <div></div>
+          </div>
+          <div class="header__navigation">
+            <div class="header__menu">
+              <a href="#" class="header__menu-item">How It Works</a>
+              <a href="#" class="header__menu-item">Price Guide</a>
+              <a href="#" class="header__menu-item accordeon">Visas</a>
+              <a href="#" class="header__menu-item accordeon">Migration Kits</a>
+              <a href="#" class="header__menu-item">Agents</a>
+            </div>
+            <div class="header__btn"></div>
+          </div>
+          <div class="header__navigation--mobile burger__menu">
+            <div class="header__menu">
+              <div class="header__menu-item">
+                <a href="#">How It Works</a>
+              </div>
+              <div class="header__menu-item">
+                <a href="#">Price Guide</a>
+              </div>
+              <div class="header__menu-item accordeon">
+                <input type="checkbox" id="chck1" class="accordeon__btn" />
+                <label class="accordeon__label" for="chck1">Visas</label>
+                <div class="accordeon__content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+              <div class="header__menu-item accordeon">
+                <input type="checkbox" id="chck2" class="accordeon__btn" />
+                <label class="accordeon__label" for="chck2">Migration Kits</label>
+                <div class="accordeon__content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+              <div class="header__menu-item"><a href="#">Agents</a></div>
+            </div>
+            <div class="header__btn"></div>
+          </div>
         </div>
-      </footer>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper"></div>
+    </main>
+    <footer>
+      <div class="wrapper"></div>
+    </footer>
   </body>
 </html>
