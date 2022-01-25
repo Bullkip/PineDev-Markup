@@ -1,5 +1,6 @@
 header {
   position: fixed;
+  z-index: 100;
   padding-top: rem(30px);
   width: 100%;
   border-bottom: 1px solid $default-color;
@@ -39,6 +40,7 @@ header {
     display: flex;
     flex-direction: row;
     .header__menu-item a {
+        font-size: rem(20px);
       color: $main-text;
       transition: all 0.2s ease-in-out;
       &:hover,
@@ -101,7 +103,7 @@ header {
       right: -5%;
       left: -5%;
       padding: rem(20px);
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.7);
       border-bottom-left-radius: 40% 10px;
       border-bottom-right-radius: 60% 30px;
       transition: all 0.2s ease-in-out;
@@ -134,35 +136,37 @@ header {
       z-index: -1;
     }
     .accordeon__label {
+        font-size: rem(20px);
       display: flex;
       justify-content: center;
       cursor: pointer;
       &:hover {
-       color: $main-blue;
+        color: $main-blue;
       }
       &::after {
         content: '';
         display: inline-block;
-        background: no-repeat center url(../img/dropdown-icon.png) ;
+        background: no-repeat center url(../img/dropdown-icon.png);
         width: 1em;
         height: auto;
         text-align: center;
-        transition: all 0.35s ease-in;
+        transition: all 0.5s ease-in;
       }
     }
     .accordeon__content {
       max-height: 0;
       padding: 0 1em;
-      transition: all 0.35s ;
+      transition: all 0.5s;
       display: flex;
       flex-direction: column;
       align-items: center;
       a {
+          font-size: rem(18px);
         color: black;
-        padding: 12px 16px;
+        padding: rem(12px) rem(16px);
         text-decoration: none;
         &:hover {
-         color: $main-blue;
+          color: $main-blue;
         }
       }
     }
@@ -175,9 +179,9 @@ header {
       }
       ~ .accordeon__content {
         max-height: 100vh;
-        max-height:-webkit-fill-available;
+        max-height: -webkit-fill-available;
         padding: 1em;
-        transition: all 0.35s ;
+        transition: all 0.5s;
       }
     }
   }

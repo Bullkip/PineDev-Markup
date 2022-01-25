@@ -1,0 +1,65 @@
+.start {
+ 
+  min-height: 100vh;
+  position: relative;
+    background: url(../img/main-img.jpg);
+     background-position:top -80px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  .start__caption {
+
+    position: relative;
+    padding: rem(151px) rem(10px) 0;
+    font-size: 42px;
+    line-height: 52px;
+    margin-bottom: rem(130px);
+    &::after {
+      content: url(../img/mobile-stamp.png);
+      position: absolute;
+      right: 15%;
+      bottom: -40%;
+      display: block;
+      background: no-repeat 50%;
+      max-width: 2.5em;
+      max-height: 2.9em;
+    }
+  }
+  .start__description {
+    font-size: rem(18px);
+    line-height: rem(26px);
+    text-align: center;
+  }
+
+  .start__button {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $main-white;
+    font-weight: 500;
+    font-size: rem(16px);
+    line-height: rem(23px);
+    background-color: $main-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(30px) 0;
+    &::after {
+      content: url(../img/cta-arrow-white.png);
+      display: inline-block;
+      margin-left: rem(45px);
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .start__img-background {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+}
