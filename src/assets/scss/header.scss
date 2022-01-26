@@ -51,7 +51,9 @@ header {
     display: flex;
     flex-direction: row;
     .header__menu-item a {
+     font-family: 'Heebo', sans-serif;
       font-size: rem(20px);
+      font-weight: 400;
       color: $main-text;
       transition: all 0.2s ease-in-out;
       &:hover,

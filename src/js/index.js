@@ -27,8 +27,6 @@ document.addEventListener('click', function(event) {
 // change header on scroll
 const headerHeight = document.querySelector('header').offsetHeight
 
-console.dir(headerHeight)
-
 window.onscroll = function() {
   scrollFunction()
 }
