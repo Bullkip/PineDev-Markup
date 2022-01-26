@@ -194,7 +194,6 @@ header {
       }
       ~ .accordeon__content {
         max-height: 100vh;
-        max-height: -webkit-fill-available;
         padding: 1em;
         transition: all 0.5s;
       }

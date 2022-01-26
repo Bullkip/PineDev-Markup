@@ -1,10 +1,13 @@
+// sections
 .start {
   min-height: 100vh;
+  // min-height: -webkit-fill-available;
   position: relative;
   background: url(../img/main-img.jpg);
   background-position: top -80px center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: rem(70px);
 
   .start__caption {
     position: relative;
@@ -68,8 +71,9 @@
 }
 
 .steps {
+  
   .steps__caption {
-    margin: rem(140px) 0 rem(30px);
+    margin: rem(0px) 0 rem(30px);
     font-family: 'Libre Caslon Text', serif;
     font-size: rem(27px);
     line-height: rem(33px);
@@ -171,5 +175,20 @@
         }
       }
     }
+  }
+}
+
+// helpers
+.lineBeforeSection {
+  position: relative;
+  &:before {
+    content:'';
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    min-width: 60px;
+    height: 0;
+    border: 1px solid #E0E0E0;
+transform:  translateX(-50%) rotate(90deg);
   }
 }
