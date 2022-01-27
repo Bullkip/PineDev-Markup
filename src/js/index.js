@@ -61,14 +61,6 @@ const swiper = new Swiper('.swiper', {
   initialSlide:0,
   slidesPerView: 'auto',
   spaceBetween: 20,
-  height: 400,
+  height: 450,
   slidesOffsetBefore: 0,
-
-
-
-
-
-
-
-
 });
