@@ -7,8 +7,8 @@ header {
   transition: all 0.4s ease-in;
 
   &.active {
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.75);
+   
     transition: all 0.2s ease-in;
     .header__body {
       
@@ -116,7 +116,7 @@ header {
       right: -6%;
       left: -6%;
       padding: rem(20px);
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: rgba(255, 255, 255, 0.75);
       border-bottom-left-radius: 40% 10px;
       border-bottom-right-radius: 60% 30px;
       transition: all 0.2s ease-in-out;
@@ -126,7 +126,7 @@ header {
         left: -6%;
         right: -6%;
         z-index: 101;
-         box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+        //  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
         transition: all 0.2s ease-in-out;
       }
       .header__menu {

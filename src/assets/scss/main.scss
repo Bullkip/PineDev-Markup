@@ -30,6 +30,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height:-webkit-fill-available;
+  background-color: $main-white;
 }
 
 *,
@@ -70,6 +71,9 @@ li {
   }
   @media screen and (max-width: $phoneWidth) {
     
+  }
+  &--thin {
+    width: 100%
   }
 }
 
