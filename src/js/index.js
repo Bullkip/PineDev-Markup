@@ -55,10 +55,13 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  direction:'vertical',
   centeredSlides: true,
+  centeredSlidesBounds: true,
+  initialSlide:0,
   slidesPerView: 'auto',
-  spaceBetween: 70,
-  autoHeight: true,
+  spaceBetween: 20,
+  height: 400,
   slidesOffsetBefore: 0,
 
 
