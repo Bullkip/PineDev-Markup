@@ -8,33 +8,53 @@
   </head>
   <body>
     <header id="header">
-      <div class="wrapper">
-        <div class="header__top">
+      <div class="header__top">
+        <div class="wrapper">
           <nav class="header__navigation">
-            <div class="header__navigation-item"></div>
-            <div class="header__navigation-item"></div>
-            <div class="header__navigation-item"></div>
+            <a href="#" class="header__navigation-item">Blog (Free Stuff)</a>
+            <a href="#" class="header__navigation-item">About Us</a>
+            <a href="#" class="header__navigation-item">Contact</a>
           </nav>
           <div class="header__account">
-            <div class="header__account-item"></div>
-            <div class="header__account-item"></div>
+            <a href="#" class="header__account-item">Join as an Agent</a>
+            <a href="#" class="header__account-item">Login</a>
           </div>
         </div>
+      </div>
+      <div class="wrapper">
         <div class="header__body">
           <img src="./assets/img/main-logo.svg" alt="" class="header__logo" />
           <div class="burger__icon">
             <div></div>
             <div></div>
           </div>
-          <div class="header__navigation">
+          <div class="header__navigation--primary">
             <div class="header__menu">
               <a href="#" class="header__menu-item">How It Works</a>
               <a href="#" class="header__menu-item">Price Guide</a>
-              <a href="#" class="header__menu-item accordeon">Visas</a>
-              <a href="#" class="header__menu-item accordeon">Migration Kits</a>
+              <div class="header__menu-item dropdown">
+                <a href="#" class="dropdown__toggle"><span>Visas</span></a>
+                <div class="dropdown__submenu">
+                    <a href="#" class="dropdown__submenu-item">Item 1</a>
+                    <a href="#" class="dropdown__submenu-item">Item 2</a>
+                </div>
+              </div>
+              <div class="header__menu-item dropdown">
+                <a href="#" class="dropdown__toggle"><span>Migration Kits</span></a>
+                <div class="dropdown__submenu">
+                    <a href="#" class="dropdown__submenu-item">Item 1</a>
+                    <a href="#" class="dropdown__submenu-item">Item 2</a>
+                    <a href="#" class="dropdown__submenu-item">Item 1</a>
+                    <a href="#" class="dropdown__submenu-item">Item 2</a>
+                </div>
+              </div>
+            
               <a href="#" class="header__menu-item">Agents</a>
+              <div class="header__lang-widget">
+                
             </div>
-            <div class="header__btn"></div>
+            </div>
+            <div class="header__btn">Ask a Question</div>
           </div>
           <div class="header__navigation--mobile burger__menu">
             <div class="header__menu">
@@ -83,6 +103,7 @@
             to take the stress out of your journey
           </p>
           <a href="#" class="start__button cta-button">Ask a Question</a>
+          <div class="start__scroll-box"><span>Scroll Down</span></div>
         </div>
       </section>
       <section class="steps lineBeforeSection">
@@ -137,10 +158,10 @@
         </div>
         <div class="wrapper wrapper--thin">
           <div class="swiper">
-             <div class="agents__navigations-btn">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
+            <div class="agents__navigations-btn">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="agents__items swiper-wrapper">
               <article class="agents__item approved topRated swiper-slide">
                 <div class="agents__item-head">
