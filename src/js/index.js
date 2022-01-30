@@ -83,7 +83,7 @@ const swiper = new Swiper('.swiper', {
       loop: true,
       spaceBetween: 60,
       slidesPerView: 3,
-      // slidesOffsetBefore: 45
+      slidesOffsetBefore: 500
     }
   }
 })
