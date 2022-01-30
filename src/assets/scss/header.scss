@@ -3,7 +3,7 @@ header {
   z-index: 100;
   padding-top: rem(30px);
   width: 100%;
-  border-bottom: 1px solid $default-color;
+  border-bottom: rem(1px) solid $default-color;
   transition: all 0.4s ease-in;
 
   &.active {
@@ -100,7 +100,7 @@ header {
         bottom: -22%;
         right: -8%;
         width: 108%;
-        height: 3px;
+        height: rem(3px);
         background-color: $default-color;
       }
       .header__menu {
@@ -165,7 +165,7 @@ header {
               margin: 0;
               min-width: rem(150px);
               border-top: none;
-              padding: 10px 0 10px;
+              padding: rem(10px) 0 rem(10px);
               background-color: $default-color;
               display: flex;
               flex-direction: column;
@@ -271,7 +271,7 @@ header {
         transform: rotate(0deg) translate(0px, 0px);
       }
       :last-child {
-        margin-top: 7px;
+        margin-top: rem(7px);
         transform: rotate(0deg) translate(0px, 0px);
       }
       &.change {
@@ -290,7 +290,7 @@ header {
         bottom: -1%;
         right: -0.5%;
         width: 25%;
-        height: 3px;
+        height: rem(3px);
         background-color: $default-color;
       }
     }
@@ -303,8 +303,8 @@ header {
       left: -6%;
       padding: rem(20px);
       background-color: rgba(255, 255, 255, 0.75);
-      border-bottom-left-radius: 40% 10px;
-      border-bottom-right-radius: 60% 30px;
+      border-bottom-left-radius: 40% rem(10px);
+      border-bottom-right-radius: 60% rem(30px);
       transition: all 0.2s ease-in-out;
       &.change {
         transform: translate(0, 100%);
