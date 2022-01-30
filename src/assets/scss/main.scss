@@ -11,15 +11,7 @@ html {
   color: $mainFontColor;
   height: 100%;
   height: -webkit-fill-available;
-  // @media screen and (max-width: $desktopWidth) {
-  //   font-size: 16px;
-  // }
-  // @media screen and (max-width: $tableWidth) {
-  //   font-size: 95%;
-  // }
-  // @media screen and (-width: $smPhoneWidth) {
-  //   font-size: 90%;
-  // }
+
 }
 
 body {
@@ -32,6 +24,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height:-webkit-fill-available;
   background-color: $main-white;
+  
 }
 
 *,
@@ -64,18 +57,23 @@ li {
   max-width: 100%;
   margin: 0 auto;
   width: 90%;
-  @media screen and (max-width: $desktopWidth) {
-   
-  }
-  @media screen and (max-width: $tableWidth) {
-    
-  }
-  @media screen and (max-width: $phoneWidth) {
-    
-  }
   &--thin {
     width: 100%
   }
+  @media screen and (min-width: $desktopWidth) {
+   max-width: 1666px;
+   &--thin {
+     max-width: 90%
+   }
+  }
+  @media screen and (min-width: $extraLargeDesktopWidth) {
+  
+   &--thin {
+     max-width: 75%
+   }
+  }
+
+  
 }
 
 @import "header.scss";

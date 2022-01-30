@@ -17,7 +17,7 @@ header {
   .header__top {
     display: none;
     background-color: $default-color;
-    padding: rem(9px) 0 rem(10px);
+    padding: rem(10px) 0;
     .wrapper {
       flex-direction: row;
       justify-content: space-between;
@@ -31,7 +31,7 @@ header {
         .header__navigation-item {
           font-family: 'Heebo', sans-serif;
           font-size: rem(14px);
-          line-height: rem(21px);
+          line-height: rem(20px);
           &:not(:first-child) {
             margin-left: rem(40px);
           }
@@ -47,7 +47,7 @@ header {
         .header__account-item {
           font-family: 'Heebo', sans-serif;
           font-size: rem(14px);
-          line-height: rem(21px);
+          line-height: rem(20px);
           color: $main-blue;
           &:first-child {
             margin-right: rem(35px);
@@ -117,6 +117,7 @@ header {
           font-weight: 400;
           color: $main-text;
           transition: all 0.2s ease-in-out;
+          letter-spacing: .06rem;
           &:hover,
           &:focus {
             color: $main-blue;
@@ -174,16 +175,16 @@ header {
                 opacity: 1;
                 transition: all 0.3s ease-in-out;
               }
-             &:before {
-                  content: '';
-                  position: absolute;
-                  top: rem(-25px);
-                  left: 0;
-                  width: 100%;
-                  height: rem(25px);
-                  background-color: transparent;
-                  cursor: initial;
-                }
+              &:before {
+                content: '';
+                position: absolute;
+                top: rem(-25px);
+                left: 0;
+                width: 100%;
+                height: rem(25px);
+                background-color: transparent;
+                cursor: initial;
+              }
             }
             .dropdown__submenu-item {
               width: 100%;
@@ -293,11 +294,10 @@ header {
         background-color: $default-color;
       }
     }
-    &_wrap {
-    }
+  
     &__menu {
       position: absolute;
-      transform: translate(100%, 100%);
+      transform: translate(300%, 100%);
       bottom: 0;
       right: -6%;
       left: -6%;
@@ -402,10 +402,15 @@ header {
       }
     }
     .header__body {
+      padding: rem(20px) 0;
       .header__navigation--primary {
         display: flex;
+        &:before {
+          bottom: -42%;
+        }
         .header__btn {
           display: block;
+          text-align: center;
         }
       }
     }
@@ -413,4 +418,48 @@ header {
       display: none;
     }
   }
+}
+@media screen and (min-width: $desktopWidth) {
+  header {
+    .header__body {
+      .header__navigation--primary {
+        .header__menu {
+          flex-basis: 75%;
+        }
+        .header__btn {
+          flex-basis: unset;
+          max-width: rem(220px);
+          min-width: rem(220px);
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $wideDesktopWidth) {
+  header {
+    .header__body {
+      .header__logo {
+        min-width: rem(290px);
+        min-height: rem(56px);
+      }
+      .header__navigation--primary {
+        flex-basis: 58%;
+        .header__menu{
+          flex-basis: 80%;
+        }
+        &:before {
+          right: -10%;
+          bottom: -50%;
+          width: 110%;
+
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $largeDesktopWidth) {
+ 
+}
+@media screen and (min-width: $extraLargeDesktopWidth) {
+  
 }

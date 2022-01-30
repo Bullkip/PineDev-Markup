@@ -53,14 +53,47 @@ const swiper = new Swiper('.swiper', {
   modules: [Navigation],
   navigation: {
     nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    prevEl: '.swiper-button-prev'
   },
-  direction:'vertical',
+  direction: 'vertical',
   centeredSlides: true,
   centeredSlidesBounds: true,
-  initialSlide:0,
-  slidesPerView: 'auto',
+  initialSlide: 0,
+  slidesPerView: 1,
   spaceBetween: 20,
-  height: 450,
+  // height: 400,
   slidesOffsetBefore: 0,
-});
+  breakpoints: {
+    1280: {
+      direction: 'horizontal',
+      loop: true,
+      spaceBetween: 30,
+      slidesPerView: 'auto',
+      slidesOffsetBefore: 400
+    },
+    1440: {
+      direction: 'horizontal',
+      loop: true,
+      spaceBetween: 60,
+      slidesPerView: 3,
+      slidesOffsetBefore: 450
+    },
+    1900: {
+      direction: 'horizontal',
+      loop: true,
+      spaceBetween: 60,
+      slidesPerView: 3,
+      // slidesOffsetBefore: 45
+    }
+  }
+})
+
+
+
+document.addEventListener('click' , (e) => {
+if(e.target.classList.contains("ctaButton")) {
+  e.preventDefault();
+  e.target.classList.toggle("pulse")
+}
+
+})
