@@ -5,19 +5,13 @@
 @import 'utils/reset';
 
 html {
+   scroll-behavior: smooth ;
   line-height: $mainLineHeight;
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
-  @media screen and (max-width: $desktopWidth) {
-    font-size: 16px;
-  }
-  @media screen and (max-width: $tableWidth) {
-    font-size: 15px;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    font-size: 14px;
-  }
+  height: -webkit-fill-available;
+
 }
 
 body {
@@ -28,6 +22,9 @@ body {
   font-weight: $mainFontWeight;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height:-webkit-fill-available;
+  background-color: $main-white;
+  
 }
 
 *,
@@ -56,51 +53,32 @@ li {
   list-style-type: none;
 }
 
-section,
-.section {
-  position: relative;
-  padding: 40px 0;
-  @media screen and (max-width: $smDesktopWidth) {
-    padding: 36px 0;
-  }
-  @media screen and (max-width: $tableWidth) {
-    padding: 28px 0;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    padding: 20px 0;
-  }
-}
-
 .wrapper {
-  display: flex;
-  flex-direction: column;
+  max-width: 100%;
   margin: 0 auto;
-  min-height: 100vh;
-  min-width: 100vh;
+  width: 90%;
+  &--thin {
+    width: 100%
+  }
+  @media screen and (min-width: $desktopWidth) {
+   max-width: 1666px;
+   &--thin {
+     max-width: 90%
+   }
+  }
+  @media screen and (min-width: $extraLargeDesktopWidth) {
+  
+   &--thin {
+     max-width: 75%
+   }
+  }
+
+  
 }
 
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+@import "header.scss";
 
-.container {
-  width: 100%;
-  flex: 0 0 auto;
-  position: relative;
-  margin: 0 auto;
-  max-width: $desktopWidth;
-  @media screen and (max-width: $smDesktopWidth) {
-    max-width: $tableWidth;
-  }
-  @media screen and (max-width: $tableWidth) {
-    max-width: $phoneWidth;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    max-width: $smPhoneWidth;
-  }
-}
+@import "content.scss"
 
-// Modules:
-// example: @import "modules/my-module.scss";
+
+

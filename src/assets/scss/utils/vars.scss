@@ -2,14 +2,17 @@
   ========================================================================== */
 
 // Font
-$mainFont                : 'Montserrat', Helvetica, Arial, sans-serif;
+$mainFont                :  'Heebo', sans-serif;
 
 // Size
-$mainFontColor           : #101010;
-$mainFontSize            : 18px;
+$mainFontColor           : #232323;
+$mainFontSize            : 14px;
 $mainFontWeight          : 400;
-$mainLineHeight          : 1.4;
+$mainLineHeight          : 1.2;
 
+$extraLargeDesktopWidth  : 1900px;
+$largeDesktopWidth       : 1600px;
+$wideDesktopWidth        : 1440px; 
 $desktopWidth            : 1280px;
 $smDesktopWidth          : 1024px;
 $tableWidth              : 768px;
@@ -42,3 +45,14 @@ $border-base             : #DCDFE6;
 $border-light            : #E4E7ED;
 $border-lighter          : #EBEEF5;
 $border-lightex          : #F2F6FC;
+
+// Custom Colors
+$main-blue               : rgb(25, 118, 210);
+$main-text               : #232323;
+$main-white              : #F9F9F9;
+
+$light-grey-border       : #e0e0e0;
+$steps-count-background  : #E6ECF3;
+$light-grey-text         : #989898;
+$scroll-box-color        : #BDBDBD;
+
