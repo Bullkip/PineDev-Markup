@@ -4,7 +4,7 @@
   height: -webkit-fill-available;
   position: relative;
   background: url(../img/main-img.jpg);
-  background-position: top -50px center;
+  background-position: top rem(-50px) center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: rem(70px);
@@ -20,7 +20,6 @@
     &::after {
       content: url(../img/mobile-stamp.png);
       position: absolute;
-
       display: block;
       background: no-repeat 50%;
       max-width: 2.5em;
@@ -71,7 +70,7 @@
     position: absolute;
     right: 2.5%;
     bottom: -0.5%;
-    min-width: 180px;
+    min-width: rem(180px);
     padding: rem(20px) 0 rem(20px) rem(20px);
     transform: translate(50%, -100%) rotate(90deg);
     span {
@@ -91,7 +90,7 @@
       display: block;
       width: 35%;
       height: 0;
-      border-bottom: 1px solid $scroll-box-color;
+      border-bottom: rem(1px) solid $scroll-box-color;
     }
   }
 }
@@ -138,7 +137,6 @@
 
 @media screen and (min-width: $smTableWidth) {
   .start {
-    // padding-top: 40px;
     .start__caption {
       max-width: 80%;
     }
@@ -200,18 +198,6 @@
 }
 @media screen and (min-width: $desktopWidth) {
   .start {
-    .start__caption {
-      // font-size: 72px;
-      // line-height: 89px;
-      &:after {
-        // left: -7%;
-        // bottom: -28%;
-      }
-    }
-    .start__description {
-    }
-    .start__button {
-    }
     .start__scroll-box {
       right: rem(50px);
       bottom: -3%;
@@ -227,8 +213,8 @@
 @media screen and (min-width: $wideDesktopWidth) {
   .start {
     .start__caption {
-      font-size: 72px;
-      line-height: 89px;
+      font-size: rem(72px);
+      line-height: rem(89px);
       padding-top: rem(309px);
       &:after {
         left: -11%;
@@ -237,8 +223,8 @@
       }
     }
     .start__description {
-      font-size: 24px;
-      line-height: 35px;
+      font-size: rem(24px);
+      line-height: rem(35px);
     }
   }
 }
@@ -259,7 +245,7 @@
     font-family: 'Libre Caslon Text', serif;
     font-size: rem(27px);
     line-height: rem(33px);
-    letter-spacing: -0.2px;
+    letter-spacing: rem(-0.2px);
   }
   .steps__description {
     font-family: 'Heebo', sans-serif;
@@ -287,11 +273,11 @@
       counter-increment: steps_count;
       color: black;
       min-height: rem(201px);
-      border: 1px solid $light-grey-border;
+      border: rem(1px) solid $light-grey-border;
       box-sizing: border-box;
-      border-radius: 160px;
+      border-radius: rem(160px);
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: rem(20px);
 
       &-header {
         font-family: 'Heebo', sans-serif;
@@ -402,7 +388,7 @@
   .steps {
     .steps__caption {
       font-size: rem(33px);
-      letter-spacing: 0.2px;
+      letter-spacing: rem(0.2px);
     }
     .steps__description {
       font-size: rem(18px);
@@ -452,7 +438,7 @@
       .steps__item.steps__item--even {
         padding: rem(55px) rem(50px) 0 rem(80px);
         .steps__item-header {
-          margin-bottom: 20px;
+          margin-bottom: rem(20px);
         }
       }
     }
@@ -527,8 +513,7 @@
     line-height: rem(22px);
     margin-bottom: rem(40px);
   }
-  &__items {
-  }
+
   &__item {
     position: relative;
     max-width: rem(360px);
@@ -571,8 +556,8 @@
           }
           .agents__item-star {
             display: inline-block;
-            width: 16px;
-            height: 16px;
+            width: rem(16px);
+            height: rem(16px);
             background-image: url(../img/StarActive.png);
             background-size: contain;
             background-repeat: no-repeat;
@@ -602,15 +587,15 @@
       .agents__item-specialization {
         max-width: 95%;
         font-family: 'Heebo', sans-serif;
-        font-size: 14px;
-        line-height: 21px;
+        font-size: rem(14px);
+        line-height: rem(21px);
         letter-spacing: 0.01em;
         &:after {
           content: '';
           display: block;
           width: 100%;
-          height: 1px;
-          border: 1px solid $light-grey-border;
+          height: rem(1px);
+          border: rem(1px) solid $light-grey-border;
           transform: rotate(180deg);
           margin: rem(22px) 0 rem(20px);
         }
@@ -620,8 +605,8 @@
         flex-direction: row;
         align-items: flex-start;
         font-family: 'Heebo', sans-serif;
-        font-size: 14px;
-        line-height: 21px;
+        font-size: rem(14px);
+        line-height: rem(21px);
         letter-spacing: 0.01em;
         color: $light-grey-text;
         &:before {
@@ -641,7 +626,7 @@
       padding-bottom: rem(30px);
       .agents__cta-btn {
         max-width: rem(220px);
-        border: 1px solid $main-blue;
+        border: rem(1px) solid $main-blue;
         padding: rem(13px) rem(48px);
         font-family: 'Heebo', sans-serif;
         font-weight: 500;
@@ -651,7 +636,7 @@
         color: $main-blue;
         text-transform: uppercase;
         transition: all 0.2s ease-in-out;
-         &:hover,
+        &:hover,
         &:focus {
           color: $default-color;
           background-color: $main-blue;
@@ -701,8 +686,8 @@
         content: '';
         display: block;
         background-size: cover;
-        height: 5px;
-        width: 60px;
+        height: rem(5px);
+        width: 0;
       }
     }
     .swiper-button-prev {
@@ -769,6 +754,7 @@
 }
 @media screen and (min-width: $smDesktopWidth) {
   .agents {
+    padding-bottom: rem(160px);
     .wrapper--thin {
       margin-bottom: rem(60px);
     }
@@ -786,7 +772,7 @@
     }
     .agents__items {
       .agent__item {
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+        box-shadow: 0 rem(4px) rem(20px) rgba(0, 0, 0, 0.04);
       }
     }
 
@@ -825,8 +811,8 @@
             .agents__item-stars {
               margin-bottom: rem(11px);
               .agents__item-star {
-                width: 20px;
-                height: 20px;
+                width: rem(20px);
+                height: rem(20px);
               }
             }
 
@@ -843,7 +829,6 @@
             font-size: rem(16px);
             line-height: rem(22px);
             &:after {
-          
               margin: rem(17px) 0;
             }
           }
@@ -884,9 +869,9 @@
     position: absolute;
     top: rem(-55px);
     left: 50%;
-    min-width: 60px;
+    min-width: rem(60px);
     height: 0;
-    border: 1px solid $light-grey-border;
+    border: rem(1px) solid $light-grey-border;
     transform: translateX(-50%) rotate(90deg);
   }
 }
@@ -945,7 +930,7 @@
 @media screen and (min-width: $smDesktopWidth) {
   .lineBefore {
     &:before {
-      top: -70px;
+      top: rem(-70px);
     }
   }
   .ctaButton {
